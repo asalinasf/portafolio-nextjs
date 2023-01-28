@@ -1,0 +1,44 @@
+.imagenFondo{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .7), rgb(0 0 0 / .5)), url(/img/about.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 6% 0;
+}
+
+@media (min-width: 768px) {
+    .titulo{
+        font-size: 8rem;
+        font-weight: 900;
+        color: var(--white);
+        text-align: center;
+    }
+    /* .descripcion{
+        color: var(--white);
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 400;
+    } */
+}
+
+.contenido{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--white);
+    text-align: center;
+}
+.descripcion{
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 400;
+}

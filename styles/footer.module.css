@@ -1,0 +1,29 @@
+.footer{
+    background-color: var(--black);
+    display: flex;
+    height: 22rem;
+    align-items: center;
+
+}
+
+@media (min-width: 768px) {
+    .footer div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+.navegacion {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.enlace{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+}

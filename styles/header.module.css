@@ -1,0 +1,51 @@
+.header {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 22rem;
+    background-color: var(--primary);
+    padding: 0 10%;
+    position: relative;
+}
+
+@media (min-width:768px) {
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width:768px) {
+    .logoEnlace {
+        margin-top: -1rem;
+    }
+}
+
+.logoEnlace h1{
+    color: var(--white);
+    display: flex;
+}
+
+.navegacion{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.enlace, .active{
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.enlace:hover, .active{
+    background-color: var(--color);
+    color: white;
+}
+

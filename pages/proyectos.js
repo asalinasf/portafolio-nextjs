@@ -1,25 +1,14 @@
+import React from "react";
 import Layout from "@/components/layout";
 import Proyecto from "@/components/proyecto";
 import styles from "../styles/grid.module.css";
-import stylesAbout from "../styles/about.module.css";
 
-export default function Home({ proyectos }) {
+const Proyectos = ({ proyectos }) => {
   return (
     <Layout
-      title="Inicio"
+      title="Proyectos"
       description="Portafolio, desarrollador, mis proyectos y mas"
     >
-      <div className={stylesAbout.imagenFondo}>
-        <main className={stylesAbout.contenedor}>
-          <div className={stylesAbout.contenido}>
-            <h1 className={stylesAbout.titulo}>Hola soy Aaron Salinas</h1>
-            <p className={stylesAbout.descripcion}>
-              Actual mente estoy estudiando React para poder trabajar como
-              freelancer, aqui encontraras todos mis proyectos y su descripcion
-            </p>
-          </div>
-        </main>
-      </div>
       <main className="contenedor">
         <h1 className="heading">Mis proyectos</h1>
         <div className={styles.grid}>
@@ -30,9 +19,9 @@ export default function Home({ proyectos }) {
       </main>
     </Layout>
   );
-}
+};
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const respuesta = await fetch(
     `${process.env.API_URL}/proyectos?populate=imagen`
   );
@@ -43,3 +32,4 @@ export async function getServerSideProps() {
     props: { proyectos },
   };
 }
+export default Proyectos;
