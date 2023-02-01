@@ -6,7 +6,6 @@ import styles from "../../styles/proyecto.module.css";
 const UrlProyecto = ({ proyecto }) => {
   const { nombre, descripcion, imagen, urlProyecto } = proyecto[0].attributes;
 
-  console.log(proyecto);
   return (
     <Layout title={nombre}>
       <article className={`contenedor ${styles.containerProyecto}`}>
@@ -46,14 +45,11 @@ export async function getStaticPaths() {
   const respuesta = await fetch(`${process.env.API_URL}/proyectos`);
   const { data } = await respuesta.json();
 
-  console.log(data);
-
   const paths = data.map((proyecto) => ({
     params: {
       url: proyecto.attributes.url,
     },
   }));
-  console.log(paths);
   return {
     paths,
     fallback: false,
