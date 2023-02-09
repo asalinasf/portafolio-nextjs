@@ -1,2 +1,9 @@
-Hola este es mi portafolio, aqui les dejo la url
-https://portafolio-nextjs-p2q6rrhq9-asalinasf.vercel.app/
+Este es mi portafolio, esta hecgo con next.js y podras encontrar mis proyectos, tecnologias que estoy estudiando y que dimino y algunas cosas sobre mí
+
+
+![Screen de mi portafolio](public/img/screenshotFull.png)
+
+'''boton
+Aqui esta la url para que visites mi portafolio
+https://portafolio-aaron.netlify.app/
+'''boton
