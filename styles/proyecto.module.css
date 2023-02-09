@@ -19,9 +19,6 @@
     color: var(--primary);
 }
 .descripcion {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
     overflow: hidden;
     font-size: 2rem;
 }
@@ -40,9 +37,12 @@
     transition-property: background-color;
     transition-duration: 300ms;
     width: 100%;
+    border-radius: 10px;
+        
 }
 .enlace:hover {
-    background-color: var(--primary);
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .imagen{

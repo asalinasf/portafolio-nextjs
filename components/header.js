@@ -1,6 +1,7 @@
 import Link from "next/link";
-import styles from "../styles/header.module.css";
+import { AiOutlineGithub } from "react-icons/ai";
 import { useRouter } from "next/router";
+import styles from "../styles/header.module.css";
 
 const Header = () => {
   const router = useRouter();
@@ -31,6 +32,9 @@ const Header = () => {
           }
         >
           Proyectos
+        </Link>
+        <Link href="https://github.com/asalinasf" target="_blank">
+          <AiOutlineGithub className={styles.github} />
         </Link>
       </nav>
     </header>

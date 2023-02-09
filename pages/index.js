@@ -1,9 +1,11 @@
 import Layout from "@/components/layout";
-import Proyecto from "@/components/proyecto";
 import styles from "../styles/grid.module.css";
 import stylesAbout from "../styles/about.module.css";
+import Proyecto from "@/components/proyecto";
+import Tecnologias from "@/components/tecnologias";
 
-export default function Home({ proyectos }) {
+export default function Home({ proyectosFavoritos }) {
+  console.log(proyectosFavoritos);
   return (
     <Layout
       title="Inicio"
@@ -21,25 +23,14 @@ export default function Home({ proyectos }) {
         </main>
       </div>
       <main className="contenedor">
-        <h1 className="heading">Mis proyectos</h1>
+        <h1 className="heading">Mis proyectos favoritos</h1>
         <div className={styles.grid}>
-          {proyectos?.map((proyecto) => (
-            <Proyecto key={proyecto.id} proyecto={proyecto.attributes} />
+          {proyectosFavoritos.map((proyecto) => (
+            <Proyecto proyecto={proyecto} />
           ))}
         </div>
       </main>
+      <Tecnologias />
     </Layout>
   );
-}
-
-export async function getServerSideProps() {
-  const respuesta = await fetch(
-    `${process.env.API_URL}/proyectos?populate=imagen`
-  );
-
-  const { data: proyectos } = await respuesta.json();
-  console.log(proyectos);
-  return {
-    props: { proyectos },
-  };
 }

@@ -42,3 +42,107 @@
     text-align: center;
     font-weight: 400;
 }
+
+.contenedor{
+    display: flex;
+    width: 75%;
+}
+
+.contenedorTec{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tituloTec {
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.contenidoTec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contenidoTec {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.contenedorTecImg{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorTecImg h3 {
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.contenedorTecImg h3:hover {
+    rotate: 360deg;
+}
+
+.html, .css, .js, .react, .next{
+    width: 100px;
+    height: 100px;
+    transition-duration: 400ms;
+}
+
+
+.next:hover {
+    width: 120px;
+    height: 120px;
+    transform: translateY(-45px);
+}
+
+.react:hover {
+    width: 120px;
+    height: 120px;
+    transform: translateY(-45px);
+}
+.js:hover {
+    width: 120px;
+    height: 120px;
+    transform: translateY(-45px);
+}
+.css:hover {
+    width: 120px;
+    height: 120px;
+    transform: translateY(-45px);
+}
+.html:hover {
+    width: 120px;
+    height: 120px;
+    transform: translateY(-45px);
+}
+.html{
+    color: #d84924;
+    
+}
+.css {
+    color: #008ed1;
+}
+
+.js {
+    color: #ddbf29;
+}
+.react{
+    color: #5ccfee;
+}
+
+

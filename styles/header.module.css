@@ -49,3 +49,15 @@
     color: white;
 }
 
+.github{
+    display: flex;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    color: white;
+    transition: 200ms;
+}
+
+.github:hover {
+    color: var(--color);
+}

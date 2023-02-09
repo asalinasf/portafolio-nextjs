@@ -1,6 +1,6 @@
 :root {
     --primary: #252440;
-    --color: #f5602f;
+    --color: #db5326;
     --black: #262626;
     --white: #FFF;
     --fuente-principal: 'Outfit', sans-serif;
@@ -46,3 +46,4 @@ main {
 a{
     text-decoration: none;
 }
+
