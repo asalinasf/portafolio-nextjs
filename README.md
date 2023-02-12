@@ -1,4 +1,4 @@
-# Portafolio Next.js
+# Portfolio Next.js
 
 ### This is my portfolio, it is made with Next.js and you can find my projects, technologies that I am studying and that I use and some things about me
 <div align="center">
